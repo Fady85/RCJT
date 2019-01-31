@@ -1,0 +1,58 @@
+if (US_Front<=10)
+			{
+				if (US_Right > US_Left)
+				{
+					WheelLeft = -2;
+                    
+					WheelRight = 1;
+                    
+
+				}
+				if (US_Left>US_Right)
+				{
+					WheelLeft = 1;
+                    
+					WheelRight = -2;
+                    
+
+				}
+
+			}
+			if (US_Left<=8)
+			{	
+				if (US_Front > US_Right)
+				{
+					WheelRight = 2;
+                    
+					WheelLeft = 2;
+                    
+
+				}
+				if (US_Right>US_Front)
+				{	
+					WheelLeft = 2;
+                    
+					WheelRight = -2;
+                    
+				}
+
+			}
+			if (US_Right<=8)
+			{	
+				if (US_Front>US_Left)
+				{
+					WheelRight = 2;
+                    
+					WheelLeft = 2;
+                    
+
+				}
+				if (US_Left>US_Front)
+				{
+					WheelRight = 2;
+                    
+					WheelLeft = -2;
+                    
+
+
+				}
